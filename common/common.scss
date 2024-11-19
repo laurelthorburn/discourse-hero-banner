@@ -48,9 +48,14 @@
   position: relative;
 }
 
-.hero-image{
+.hero-image {
   background-image: var(--banner-bg-img);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  &::before,
+  &::after {
+    display: none;
+  }
 }
