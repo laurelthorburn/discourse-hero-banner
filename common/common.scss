@@ -46,9 +46,17 @@
 
 .banner-box {
   position: relative;
+}
+
+.container {
   max-width: var(--d-max-width);
   margin-right: auto;
   margin-left: auto;
+
+  &::before,
+  &::after {
+    display: none !important;
+  }
 }
 
 .hero-image {
@@ -58,9 +66,3 @@
   background-repeat: no-repeat;
 }
 
-.container {
-  &::before,
-  &::after {
-    display: none !important;
-  }
-}
